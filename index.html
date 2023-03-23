@@ -14,7 +14,7 @@
 <body>
 
     <!-- <=======Main-Start-from-here=====> -->
-    <div class="container-fluid vh-100 ">
+    <div class="container-fluid vh-100">
         <div class="row">
             <div id="side_bar" class="side_bar vh-100 w-25 text-light my-2">
                     <ul class="fs-4 border shadow vh-100 bg-warning d-flex flex-column pt-5">
@@ -86,40 +86,58 @@
                         <div class="user_profile">user</div>
 
                 </div>
-                <div class="recent_views d-flex flex-wrap mt-5 text-light">
+                <div class="recent_views d-flex flex-wrap mt-5 text-light justify-content-around">
 
                     
-                    <div class="cards border bg-warning shadow p-5 w-25">
-                        <div class="daily d-flex">
+                    <div class="cards border bg-warning shadow p-5 mx-2">
+                        <div class="daily d-flex fs-3">
                             <div class="numbers pe-2">1,256</div>
-                            <div class="icons">xxx</div>
+                            <div class="icons"><ion-icon name="eye-outline"></ion-icon></div>
                         </div>
-                            <p>Daily Views</p>
+                        <hr>
+                            <p class="text-center">Daily Views</p>
                     </div>
-                    <div class="cards p-5 border w-25 bg-warning shadow">
-                        <div class="sales d-flex">
-                            <div class="numbers pe-2">1,256</div>
-                            <div class="icons">xxx</div>
+                    <div class="cards border bg-warning shadow p-5 mx-2">
+                        <div class="sales d-flex fs-3">
+                            <div class="numbers pe-2">4,355</div>
+                            <div class="icons"><ion-icon name="bag-handle-outline"></ion-icon></div>
                         </div>
-                            <p>Daily Views</p>
+                        <hr>
+                            <p class="text-center">Sales</p>
                     </div>
-                    <div class="cards p-5 border bg-warning shadow w-25">
-                        <div class="orders d-flex">
-                            <div class="numbers pe-2">1,256</div>
-                            <div class="icons">xxx</div>
+                    <div class="cards border bg-warning shadow p-5 mx-2">
+                        <div class="order d-flex fs-3">
+                            <div class="numbers pe-2">2,050</div>
+                            <div class="icons"><ion-icon name="bookmarks-outline"></ion-icon></div>
                         </div>
-                            <p>Daily Views</p>
+                        <hr>
+                            <p class="text-center">Orders</p>
                     </div>
-                    <div class="cards p-5 border bg-warning shadow w-25">
-                        <div class="earning d-flex">
-                            <div class="numbers pe-2">1,256</div>
-                            <div class="icons">xxx</div>
+                
+                    <div class="cards border bg-warning shadow p-5 mx-2">
+                        <div class="daily d-flex fs-3">
+                            <div class="numbers pe-2">$5,256</div>
+                            <div class="icons"><ion-icon name="cash-outline"></ion-icon></div>
                         </div>
-                            <p>Daily Views</p>
+                        <hr>
+                            <p class="text-center">Earning</p>
+                    </div>
+                   
+
+                
+                    </div>
+                    <hr>
+
+                    <h2 class="text-center text-warning fw-bold">Recently Orders</h2>
+                    <hr>
+                    <div class="recent_order bg-warning shadow text-light mx-2">
+                        <div class="row p-5">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor numquam repellendus minus, facilis molestias maxime consequatur magni animi libero earum enim ex illo doloribus. Possimus iste voluptatem maiores et optio itaque quae nihil neque pariatur fuga blanditiis, corrupti consectetur sequi earum quia ea sit aut nemo veniam aspernatur similique.</p>
+                             
+                        </div>
                     </div>
 
                 </div> 
-             </div>
         </div>
     </div>
     <!-- <=======Main-End-from-here=====> -->
@@ -134,16 +152,13 @@
        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
        <script>
-        let icon_toggle =document.querySelector(".icon_toggle");
-        let side_bar = document.querySelector(".side_bar");
-        let main_content = document.querySelector(".main_content");
-
-
-        icon_toggle.onclick = function(){
-        side_bar.classList.toggle("toggled");
-        main_content.classList.toggle("toggled2");
-
-};
+                let icon_toggle =document.querySelector(".icon_toggle");
+                let side_bar = document.querySelector(".side_bar");
+                let main_content = document.querySelector(".main_content");
+                icon_toggle.onclick = function(){
+                side_bar.classList.toggle("toggled");
+                main_content.classList.toggle("toggled2");
+                };
        </script>
    
 </body>
